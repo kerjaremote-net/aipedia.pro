@@ -1,70 +1,38 @@
-# Astro & Tailwind CSS Starter Kit
+AI Pedia Landing Page
+=====================
 
-by https://lexingtonthemes.com
+Welcome to AI Pedia, your one-stop destination for exploring the power and possibilities of artificial intelligence. Our platform offers insightful information, cutting-edge tools, and interactive features to enhance your AI experience.
 
-## License
+Features
+--------
 
-This template is open-source software licensed under the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0). Feel free to fork, modify, and use it in your projects.
-## Need an attribution-free version?
+-   Comprehensive AI Directory: Discover a wide range of AI models and applications, all curated in one accessible platform.
 
-Checkout [Lexington Themes](https://lexingtonthemes.com/) for free and premium multipage themes & UI Kits
-For freelancers, developers, businesses, and personal use.
-Beautifully crafted with Astro.js, and Tailwind CSS — Simple & easy to customise.
+-   Interactive Learning: Engage with tutorials, guides, and resources to expand your AI knowledge and skills.
 
-## This template is using Tailwind CSS V4
+-   Up-to-date AI News: Stay informed with the latest developments, trends, and breakthroughs in the AI field.
 
-Now we are using only a CSS file. It's called `global.css` and it's located in the src/styles folder. Now we are eimporting Tailwind CSS on the same file instead of using the `tailwind.config.cjs` file. Like this:
+Easy to Use
+-----------
 
-```css
-// Importing Tailwind CSS
-@import "tailwindcss";
-// Importing Tailwind plugins
-@plugin "@tailwindcss/typography";
-@plugin "@tailwindcss/forms";
-```
+Our platform is built with simplicity and user-friendliness in mind:
 
-Then to add your styles you will use the @theme directive. Like this:
+-   Navigate with Ease: Intuitive design ensures that you can find what you need quickly and efficiently.
 
-```css
-@theme {
-  /* Your CSS goes here, see how styles are written on the global.css file */
-}
-```
+-   Responsive Design: Enjoy a seamless experience on any device, anywhere, anytime.
 
-Remember this is just in Alpha version, so you can use it as you want. Just keep an eye on the changes that Tailwind CSS is going to make.
+Get Started
+-----------
 
-## Template Structure
+Ready to dive into the world of AI? Explore and interact with our platform:
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command | Action |
+| --- | --- |
+| `Sign Up` | Create an account and join the AI community |
+| `Explore Models` | Browse our extensive collection of AI models |
+| `Start Learning` | Access tutorials and enhance your AI skills |
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Discover More
+-------------
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## Want to learn more?
-
-Feel free to check Astroäs [documentation](https://docs.astro.build)
+For more information, feel free to explore our comprehensive resources and guides. Join us in paving the way for a smarter future with AI Pedia.
