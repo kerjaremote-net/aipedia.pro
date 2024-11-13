@@ -6,7 +6,7 @@ vite: {
     plugins: [tailwindcss()],
   },
     // add yur domain name here
-   site: 'https://kerjaremote-net.github.io',
-   base: 'aipediapro',
+   site: 'https://aipedia.pro',
+   base: 'https://aipedia.pro',
   integrations: [sitemap()]
 });
