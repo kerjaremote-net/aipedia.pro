@@ -7,6 +7,6 @@ vite: {
   },
     // add yur domain name here
    site: 'https://aipedia.pro',
-   base: 'https://aipedia.pro',
+  //  base: 'https://aipedia.pro',
   integrations: [sitemap()]
 });
