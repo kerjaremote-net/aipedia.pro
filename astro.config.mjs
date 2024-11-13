@@ -6,6 +6,7 @@ vite: {
     plugins: [tailwindcss()],
   },
     // add yur domain name here
-   site: 'https://lexingtonthemes.com',
+   site: 'https://kerjaremote-net.github.io',
+   base: 'aipediapro',
   integrations: [sitemap()]
 });
