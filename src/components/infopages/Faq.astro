@@ -17,7 +17,6 @@
           this.activeAccordion = (this.activeAccordion === id) ? '' : id;
         }
       }" class="relative w-full mx-auto font-normal lg:col-span-2">
-        <!-- Pertanyaan dan Jawaban -->
         <div x-data="{ id: $id('accordion') }"
              :class="{ 'text-black': activeAccordion == id, 'text-zinc-600 hover:text-accent-500': activeAccordion != id }"
              class="cursor-pointer group text-black">
@@ -39,6 +38,31 @@
           <div x-show="activeAccordion == id" x-collapse>
             <div class="p-4 pt-2 text-zinc-500">
               Tidak ada limitasi chat, tetapi ada limitasi berdasarkan credits balance (credits balance).
+            </div>
+          </div>
+        </div>
+
+        <div x-data="{ id: $id('accordion') }"
+             :class="{ 'text-black': activeAccordion == id, 'text-zinc-600 hover:text-accent-500': activeAccordion != id }"
+             class="cursor-pointer group text-black">
+          <button
+            @click="setActiveAccordion(id)"
+            class="flex items-center justify-between w-full p-4 pb-1 text-left font-medium select-none">
+            <span>Bagaimana agar bisa lebih hemat?</span>
+            <svg
+              class="w-5 h-5 duration-300 ease-out text-accent-500 -rotate-[45deg]"
+              :class="{ '-rotate-[45deg]': activeAccordion == id }"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6"></path>
+            </svg>
+          </button>
+          <div x-show="activeAccordion == id" x-collapse>
+            <div class="p-4 pt-2 text-zinc-500">
+              Gunakan model efisien seperti: GPT-4o-mini atau Claude-3.5-Haikku untuk pekerjaan sehari-hari yeng lebih umum, dan hanya gunakan GPT-4 atau Claude-3.5-Sonnet untuk pekerjaan-pekerjaan yang lebih advance.
             </div>
           </div>
         </div>
