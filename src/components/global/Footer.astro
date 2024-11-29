@@ -1,23 +1,71 @@
 <footer>
-  <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-16">
-    <div class="grid grid-cols-2 lg:grid-cols-4 items-start gap-x-8 gap-y-8">
-      <a href="/" class="xl:col-span-1 text-black inline-flex items-center gap-3">
-        <img src="/aipedia-logo.png" class="h-7 w-auto">
-        <span class="font-bold font-display">AI Pedia Pro</span>
-      </a>
-      <!-- Contact Section -->
-      <div class="mt-4 lg:mt-0">
-        <h2 class="text-lg font-semibold text-black mb-2">Contact Us</h2>
-          <a href="mailto:aipedia.pro@gmail.com" class="text-black hover:underline">
-            aipedia.pro@gmail.com
-          </a>
+  <div class="mx-auto w-full max-w-7xl px-4 lg:px-8 py-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {/* Logo Section */}
+      <div>
+        <a href="/" class="inline-flex items-center gap-3">
+          <img src="/aipedia-logo.png" alt="AI Pedia Pro Logo" class="h-7 w-auto" />
+          <span class="font-bold font-display">AI Pedia Pro</span>
+        </a>
       </div>
 
-      <div class="mt-4 lg:mt-0">
-        <h2 class="text-lg font-semibold text-black mb-2">Costumer</h2>
-          <a href="https://bit.ly/aipedia-feedback" class="text-black hover:underline">
-            Feedback
-          </a>
+      {/* Contact Section */}
+      <div>
+        <h2 class="text-sm font-semibold text-gray-900 mb-4">Contact Us</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="mailto:aipedia.pro@gmail.com" class="text-sm text-gray-600 hover:text-gray-900">
+              aipedia.pro@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Customer Section */}
+      <div>
+        <h2 class="text-sm font-semibold text-gray-900 mb-4">Customer</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://bit.ly/aipedia-feedback" class="text-sm text-gray-600 hover:text-gray-900">
+              Feedback
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Resources Section */}
+      <div>
+        <h2 class="text-sm font-semibold text-gray-900 mb-4">Resources</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="/blog" class="text-sm text-gray-600 hover:text-gray-900">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a 
+              href="https://www.threads.net/@aipedia.pro" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="text-sm text-gray-600 hover:text-gray-900"
+            >
+              Threads
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {/* Terms and Privacy Section */}
+  <div class="border-t border-gray-200">
+    <div class="mx-auto w-full max-w-7xl px-4 lg:px-8 py-6">
+      <div class="text-center text-sm text-gray-500">
+        <span>© 2024 AI Pedia Pro. All rights reserved.</span>
+        <span class="mx-2">|</span>
+        <a href="/terms" class="text-gray-600 hover:text-gray-900">Terms of Service</a>
+        <span class="mx-2">|</span>
+        <a href="/privacy" class="text-gray-600 hover:text-gray-900">Privacy Policy</a>
       </div>
     </div>
   </div>

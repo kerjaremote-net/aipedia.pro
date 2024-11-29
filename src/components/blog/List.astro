@@ -1,0 +1,92 @@
+---
+// BlogList.astro
+const blogPosts = [
+  {
+    id: 1,
+    title: "The Future of AI: What's Next for Artificial Intelligence",
+    excerpt: "Exploring the latest trends and predictions for AI development in the coming years, including breakthroughs in neural networks and quantum computing.",
+    date: "2024-01-15",
+    author: "TechCrunch",
+    image: "https://images.unsplash.com/photo-1485796826113-174aa68fd81b?q=80&w=1200",
+    url: "https://techcrunch.com/ai-future",
+    readTime: "8 min read"
+  },
+  {
+    id: 2,
+    title: "How GPT-4 is Revolutionizing Natural Language Processing",
+    excerpt: "A deep dive into OpenAI's latest language model and its implications for businesses and everyday applications.",
+    date: "2024-01-12",
+    author: "Wired",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200",
+    url: "https://wired.com/gpt4-revolution",
+    readTime: "12 min read"
+  },
+  {
+    id: 3,
+    title: "AI Ethics: Balancing Innovation and Responsibility",
+    excerpt: "Examining the ethical considerations in AI development and the importance of responsible AI implementation.",
+    date: "2024-01-10",
+    author: "MIT Technology Review",
+    image: "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200",
+    url: "https://technologyreview.com/ai-ethics",
+    readTime: "10 min read"
+  },
+  {
+    id: 4,
+    title: "Machine Learning in 2024: Industry Applications",
+    excerpt: "Real-world examples of how businesses are leveraging machine learning to drive innovation and efficiency.",
+    date: "2024-01-08",
+    author: "Forbes",
+    image: "https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=1200",
+    url: "https://forbes.com/ml-applications",
+    readTime: "6 min read"
+  },
+  {
+    id: 5,
+    title: "The Rise of AI-Powered Healthcare Solutions",
+    excerpt: "How artificial intelligence is transforming healthcare delivery, from diagnosis to treatment planning.",
+    date: "2024-01-05",
+    author: "Nature",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200",
+    url: "https://nature.com/ai-healthcare",
+    readTime: "15 min read"
+  }
+];
+---
+
+<div class="max-w-6xl mx-auto px-4 py-8">
+  <h2 class="text-2xl font-bold mb-6 text-left text-gray-800">Latest AI Articles</h2>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+    {blogPosts.map((post) => (
+      <article class="group max-w-sm w-full">
+        <a href={post.url} target="_blank" rel="noopener noreferrer" class="block">
+          <div class="aspect-video mb-3 overflow-hidden">
+            <img 
+              src={post.image} 
+              alt={post.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="space-y-2">
+            <div class="flex items-center text-xs text-gray-600">
+              <span class="font-medium">{post.author}</span>
+              <span class="mx-2">·</span>
+              <span>{post.readTime}</span>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800 line-clamp-2 group-hover:text-blue-600">
+              {post.title}
+            </h3>
+            <p class="text-xs text-gray-600 line-clamp-2">
+              {post.excerpt}
+            </p>
+            <div class="text-xs text-gray-500">
+              {post.date}
+            </div>
+          </div>
+        </a>
+      </article>
+    ))}
+  </div>
+</div>
